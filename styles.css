@@ -1,0 +1,252 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(44, 42, 42, 0.616);
+	color: #fff;
+	padding: 10px 20px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+nav {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+nav ul {
+	
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: fit-content;
+    width: 100%;
+    padding-block: 6px;
+}
+
+nav ul li {
+	margin: 0 10px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+  
+.nav-link:hover {
+    background-color: #555;
+    border-radius: 3px;
+}
+
+#welcome-section {
+	height: 100vh;
+	background-color: #ff85804a;
+	display: flex;
+	align-items: center;
+}
+
+.welcome-container {
+	margin: auto;
+    text-align: center;
+    color: coral;
+    padding-block: 10px;
+    padding-inline: 12px;
+    width: 30%;
+}
+.welcome-container h1 {
+	font-size: 50px;
+    text-transform: capitalize;
+}
+.welcome-container h1 span {
+	font-size: 38px;
+    color: aliceblue;
+    font-style: oblique;
+    font-family: monospace;
+    text-transform: lowercase;
+}
+
+#projects {
+	background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+#projects h1 {
+	text-transform: capitalize;
+    font-size: 30px;
+    font-family: none;
+    letter-spacing: 1px;
+    word-spacing: 6px;
+}
+.projects-container {
+	margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-block-start: 40px;
+    width: 100%;
+    
+}
+
+.project-tile {
+	width: 350px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+    text-align: center;
+    height: 315px;
+    border-radius: 8px;
+	display: grid;
+	place-items: center;
+}
+
+  
+.project-tile h2 {
+	margin-top: 0;
+}
+
+.project-tile p {
+	margin-bottom: 10px;
+    width: 100%;
+    word-spacing: 5px;
+    text-align: start;
+    font-style: oblique;
+    line-height: 25px;
+}
+
+.project-tile a {
+	display: block;
+	background-color: #fff;
+	padding-block: 10px;
+	padding-inline: 12px;
+	border-radius: 8px;
+	text-decoration: none;
+	color: black;
+
+
+}
+.social-media {
+      
+    width: 100%;
+    height: 100vh;
+    /* display: grid; */
+    place-items: center;
+    gap: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* column-gap: 14px; */
+    gap: 112px;
+   
+    
+}
+.social-media .take {
+    text-align: center;
+    
+}
+.social-media .take p{
+
+    font-size: 35px;
+}
+/* .social-media .coffe{
+   
+} */
+  
+.social-media a {
+    display: inline-block;
+    margin: -12px 30px;
+    width: 40px;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 8px;
+
+}
+.social-media a:hover {
+    box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+    transition: 2s ease-in-out;
+   
+}
+.social-media a > img {
+    width: 100%;
+    border-radius: 4px;
+    
+   
+  }
+footer{
+    
+    padding-block: 50px;
+    display: fe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    border-top: 12px solid #DDD;
+    margin-bottom: 15px;
+
+}
+footer p {
+    word-spacing: 10px;
+    text-transform: capitalize;
+    
+  }
+
+footer + a{
+    background-color: rgba(44, 42, 42, 0.616);
+    border-radius: 8px;
+    position: absolute;
+    right: 0px;
+    padding-block: -6px;
+    padding-inline: 18px;
+    text-decoration: none;
+    color: springgreen;
+    font-size: 34px;
+   
+    box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+}
+
+@media (max-width: 768px) {
+    .social-media {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .take {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .coffe {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .coffe a {
+      margin: 0 10px;
+    }
+  }
+  
